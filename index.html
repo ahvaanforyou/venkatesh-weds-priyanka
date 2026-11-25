@@ -138,7 +138,10 @@
   <canvas id="flower-petals-canvas" aria-hidden="true"></canvas>
 
   <!-- Floating Wedding Background Music Controller -->
-  <audio id="weddingBgm" loop preload="auto" src="assets/wedding-music.mp3"></audio>
+  <audio id="weddingBgm" loop preload="auto">
+    <source src="assets/wedding-music.mp3?v=20261125c" type="audio/mpeg">
+    <source src="assets/wedding-music.mpeg?v=20261125c" type="audio/mpeg">
+  </audio>
   <button id="musicToggleBtn" class="floating-music-btn" aria-label="Toggle Wedding Music">
     <div class="music-disc-wrap">
       <i data-lucide="music" class="music-icon icon-playing"></i>
@@ -521,7 +524,7 @@
             <i data-lucide="map-pin" class="venue-pin-icon"></i>
           </div>
           <h3 class="venue-name">Sri Markandeya Padmashali Kalyanamandapam</h3>
-          <p class="venue-subname">GR AC Hall, Mangalagiri</p>
+          <p class="venue-subname"><span class="grac-hall-highlight"><span class="grac-tag">GR AC</span> Hall</span>, Mangalagiri</p>
           <div class="venue-meta-row">
             <span><i data-lucide="calendar"></i> <strong>Reception:</strong> Sunday, 13 December 2026 at 8:00 PM</span>
             <span><i data-lucide="utensils"></i> <strong>Dinner:</strong> 8:00 PM onwards</span>
@@ -532,13 +535,11 @@
         <div class="venue-map-frame">
           <iframe
             title="Sri Markandeya Padmashali Kalyanamandapam Mangalagiri Location"
-            src="https://maps.google.com/maps?q=Sri+Markandeya+Padmashali+Kalyanamandapam+Mangalagiri&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1sSri+Markandeya+Padmashali+Kalyanamandapam+Mangalagiri!6i16!3m1!1sen!5m1!1sen"
             width="100%"
-            height="220"
+            height="240"
             style="border:0;"
             allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
 
@@ -574,13 +575,11 @@
         <div class="venue-map-frame">
           <iframe
             title="Home Venue Mangalagiri Location"
-            src="https://maps.google.com/maps?q=16.429054260253906,80.56979370117188&t=&z=17&ie=UTF8&iwloc=&output=embed"
+            src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1s16.429054,80.569794!6i17!3m1!1sen!5m1!1sen"
             width="100%"
-            height="220"
+            height="240"
             style="border:0;"
             allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
 
