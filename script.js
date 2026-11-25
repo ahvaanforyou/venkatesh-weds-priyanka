@@ -692,11 +692,49 @@ function handleRsvpSubmit(e) {
   const nameDisplay = document.getElementById('guest-name-display');
   const summaryDetails = document.getElementById('rsvp-summary-details');
 
+  const selectedEventsList = Array.from(document.querySelectorAll('input[name="events"]:checked'))
+    .map(cb => cb.value);
+
   if (nameDisplay) nameDisplay.textContent = name;
   if (summaryDetails) {
-    summaryDetails.innerHTML = isAttending
-      ? `🎉 Attending with <strong>${guests}</strong> guest(s) for <strong>${eventsChecked || 'All Celebrations'}</strong>`
-      : `🕊️ Heartfelt blessings received with warm gratitude from afar`;
+    if (isAttending) {
+      const eventsHtml = selectedEventsList.length > 0
+        ? selectedEventsList.map(ev => `<span class="rsvp-event-badge">✨ ${ev}</span>`).join('')
+        : '<span class="rsvp-event-badge">✨ All Celebrations</span>';
+
+      summaryDetails.innerHTML = `
+        <div class="rsvp-thankyou-summary">
+          <div class="rsvp-summary-row">
+            <i data-lucide="phone"></i>
+            <span><strong>Contact / Phone:</strong> ${phone}</span>
+          </div>
+          <div class="rsvp-summary-row">
+            <i data-lucide="users"></i>
+            <span><strong>Guests:</strong> ${guests} Person(s)</span>
+          </div>
+          <div class="rsvp-summary-events-title">
+            <i data-lucide="calendar-check"></i>
+            <span><strong>Confirmed Ceremonies:</strong></span>
+          </div>
+          <div class="rsvp-events-badge-wrap">
+            ${eventsHtml}
+          </div>
+        </div>
+      `;
+    } else {
+      summaryDetails.innerHTML = `
+        <div class="rsvp-thankyou-summary">
+          <div class="rsvp-summary-row">
+            <i data-lucide="phone"></i>
+            <span><strong>Contact / Phone:</strong> ${phone}</span>
+          </div>
+          <p style="margin: 8px 0 0; color: #166534; font-size: 0.88rem; line-height: 1.4;">
+            🕊️ Heartfelt blessings received with warm gratitude from afar.
+          </p>
+        </div>
+      `;
+    }
+    if (window.lucide) window.lucide.createIcons();
   }
 
   setTimeout(() => {
