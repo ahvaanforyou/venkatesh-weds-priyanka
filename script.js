@@ -44,10 +44,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // 6. GSAP ScrollTrigger Event Cards Stacking Deck
   initEventCardsScrollTrigger();
 
-  // 7. Responsive RSVP System with Attendance Toggle
-  initRsvpAttendanceToggle();
-  initRsvpExpander();
-  checkExistingRsvp();
+  // 7. Responsive RSVP System (Guarded for Family Cards)
+  if (document.getElementById('rsvp-form')) {
+    initRsvpAttendanceToggle();
+    initRsvpExpander();
+    checkExistingRsvp();
+  }
 
   // 8. Background Wedding Music & Floating Mute Button
   initBackgroundMusic();

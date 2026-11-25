@@ -3008,3 +3008,165 @@ body.intro-active {
   letter-spacing: 0.3px !important;
   line-height: 1.15 !important;
 }
+
+
+/* ==========================================================================
+   THE BLESSED FAMILIES SECTION (Replacing RSVP)
+   ========================================================================== */
+.section-families {
+  padding-left: var(--container-pad);
+  padding-right: var(--container-pad);
+  margin: 36px 0 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.families-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .families-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
+
+.family-card {
+  position: relative;
+  background: #ffffff;
+  border: 1.5px solid rgba(212, 175, 55, 0.45);
+  border-radius: 18px;
+  padding: 24px 18px 20px;
+  box-shadow: 0 8px 24px rgba(12, 28, 64, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.family-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(12, 28, 64, 0.12);
+  border-color: #d4af37;
+}
+
+.family-card-crest {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.family-crest-symbol {
+  color: #b45309;
+  font-size: 0.95rem;
+}
+
+.family-role-badge {
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #b45309;
+  background: #fefce8;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  padding: 3px 12px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.family-surname {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0c1c40;
+  margin: 0 0 14px;
+}
+
+.family-details-box {
+  width: 100%;
+  background: #fdfbf7;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+.family-member-row {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  color: #1e293b;
+  margin: 4px 0;
+  line-height: 1.4;
+}
+
+.family-member-row strong {
+  color: #0c1c40;
+  font-weight: 600;
+}
+
+.family-card-footer {
+  margin-top: auto;
+}
+
+.family-place-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 4px 14px;
+  border-radius: 999px;
+}
+
+.family-place-pill svg {
+  width: 13px;
+  height: 13px;
+  color: #2563eb;
+}
+
+/* Event cards spacious uncompressed date & time styling */
+.event-custom-date {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(0.78rem, 2.3vw, 0.95rem) !important;
+  font-weight: 700 !important;
+  margin: 3px 0 1px !important;
+  letter-spacing: 0.4px !important;
+  line-height: 1.2 !important;
+}
+
+.event-custom-time {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(0.74rem, 2.1vw, 0.88rem) !important;
+  font-weight: 600 !important;
+  color: #475569 !important;
+  margin: 1px 0 2px !important;
+  letter-spacing: 0.3px !important;
+  line-height: 1.15 !important;
+}
+
+.event-custom-location {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(0.68rem, 1.8vw, 0.78rem) !important;
+  font-weight: 600 !important;
+  color: #1e3a8a !important;
+  margin: 2px 0 0 !important;
+  letter-spacing: 0.2px !important;
+  line-height: 1.2 !important;
+}

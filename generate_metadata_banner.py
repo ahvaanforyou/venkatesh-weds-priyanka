@@ -105,9 +105,9 @@ def generate_banners():
     draw.polygon([(center_x, 114), (center_x + 4, 118), (center_x, 122), (center_x - 4, 118)], fill=bright_gold)
 
     # Stacked Names
-    draw_c('Chi. Venkatesh', 134, f_name_big, (255, 255, 255))
+    draw_c('Venkatesh', 134, f_name_big, (255, 255, 255))
     draw_c('—  weds  —', 180, f_weds, bright_gold)
-    draw_c('Chi.La.Sow. Devi Priyanka', 212, f_name_big, (255, 255, 255))
+    draw_c('Devi Priyanka', 212, f_name_big, (255, 255, 255))
 
     draw.line([(center_x - 140, 268), (center_x + 140, 268)], fill=deep_gold, width=1)
 
