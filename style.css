@@ -3225,3 +3225,33 @@ body.intro-active {
   color: inherit !important;
   letter-spacing: 0.5px;
 }
+
+
+/* Three lines location style for Wedding and Reception cards */
+.event-three-lines {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 1px !important;
+  margin: 3px 0 0 !important;
+  line-height: 1.22 !important;
+}
+
+.event-three-lines .loc-line {
+  display: block;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(0.66rem, 1.8vw, 0.78rem);
+  font-weight: 600;
+  color: #1e3a8a;
+  letter-spacing: 0.3px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .event-three-lines .loc-line {
+    font-size: 0.64rem;
+    letter-spacing: 0.2px;
+  }
+}
