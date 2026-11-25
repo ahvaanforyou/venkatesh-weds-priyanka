@@ -2350,12 +2350,13 @@ body.intro-active {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 5px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  gap: 4px;
   font-family: var(--font-sans);
-  font-size: clamp(0.66rem, 2.1vw, 0.74rem);
+  font-size: clamp(0.52rem, 1.6vw, 0.62rem);
   font-weight: 800;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   color: #0c2045;
   line-height: 1.35;
   margin: 0;
@@ -3208,4 +3209,19 @@ body.intro-active {
   height: 240px !important;
   min-height: 240px !important;
   border: 0;
+}
+
+.venue-name .grac-hall-highlight {
+  display: inline;
+  color: inherit !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+}
+
+.venue-name .grac-tag {
+  font-size: 1.08em !important;
+  font-weight: 800 !important;
+  color: inherit !important;
+  letter-spacing: 0.5px;
 }
