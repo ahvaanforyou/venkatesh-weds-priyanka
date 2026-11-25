@@ -166,14 +166,12 @@
         <!-- Couple Names -->
         <div class="couple-names-wrap">
           <h1 class="person-name groom-name">Chi. Venkatesh</h1>
-          <div class="person-telugu-name">(చి. వెంకటేష్ పాణిదాపు)</div>
           <div class="weds-flourish">
             <span class="flourish-curve left"></span>
             <span class="weds-text">weds</span>
             <span class="flourish-curve right"></span>
           </div>
           <h1 class="person-name bride-name">Chi.La.Sow. Devi Priyanka</h1>
-          <div class="person-telugu-name">(చి.ల.సౌ. దేవి ప్రియాంక కోడాలి)</div>
         </div>
 
         <!-- Ornamental Divider -->
@@ -181,6 +179,13 @@
           <span class="div-line"></span>
           <span class="div-symbol">✦</span>
           <span class="div-line"></span>
+        </div>
+
+        <!-- Wedding Date & Place (Positioned naturally in open sky, never overlaps background figures) -->
+        <div class="hero-date-badge-inline">
+          <span class="hero-date-line">12 DECEMBER 2026</span>
+          <span class="hero-date-sep">✦</span>
+          <span class="hero-place-line">MANGALAGIRI</span>
         </div>
 
       </div>
@@ -192,15 +197,6 @@
           alt="Divine Radha Krishna Blessings" 
           class="hero-radha-krishna-img" 
         />
-      </div>
-
-      <!-- Wedding Date & Place brought DOWN below divine figures so it never overlaps -->
-      <div class="hero-date hero-date-bottom">
-        <div class="hero-date-badge">
-          <span class="hero-date-line">12 DECEMBER 2026</span>
-          <span class="hero-date-sep">✦</span>
-          <span class="hero-place-line">MANGALAGIRI</span>
-        </div>
       </div>
     </header>
 
@@ -440,8 +436,7 @@
             <div class="event-card-inner-overlay overlay-right">
               <h3 class="event-custom-title title-pellikoduku">Pelli Kodukuni</h3>
               <p class="event-custom-telugu">పెళ్ళికొడుకుని చేయుట</p>
-              <p class="event-custom-date date-pellikoduku">10-12-2026</p>
-              <p class="event-custom-time">7:30 AM</p>
+              <p class="event-custom-date date-pellikoduku">10-12-2026 • 7:30 AM</p>
               <p class="event-custom-location">At our home, Mangalagiri</p>
             </div>
           </div>
@@ -458,8 +453,7 @@
             <div class="event-card-inner-overlay overlay-left">
               <h3 class="event-custom-title title-haldi">Haldi Ceremony</h3>
               <p class="event-custom-telugu">హల్దీ వేడుక</p>
-              <p class="event-custom-date date-haldi">11-12-2026</p>
-              <p class="event-custom-time">8:00 AM</p>
+              <p class="event-custom-date date-haldi">11-12-2026 • 8:00 AM</p>
               <p class="event-custom-location">At our home, Mangalagiri</p>
             </div>
           </div>
@@ -476,9 +470,8 @@
             <div class="event-card-inner-overlay overlay-right">
               <h3 class="event-custom-title title-wedding">Wedding</h3>
               <p class="event-custom-telugu">శుభ ముహూర్తం</p>
-              <p class="event-custom-date date-wedding">12-12-2026</p>
-              <p class="event-custom-time">8:32 PM</p>
-              <p class="event-custom-location">Sri Markandeya Padmashali Hall, Mangalagiri</p>
+              <p class="event-custom-date date-wedding">12-12-2026 • 8:32 PM</p>
+              <p class="event-custom-location">Sri Markandeya Hall, Mangalagiri</p>
             </div>
           </div>
         </div>
@@ -494,9 +487,8 @@
             <div class="event-card-inner-overlay overlay-left">
               <h3 class="event-custom-title title-reception">Reception</h3>
               <p class="event-custom-telugu">వివాహ విందు</p>
-              <p class="event-custom-date date-reception">13-12-2026</p>
-              <p class="event-custom-time">8:00 PM (Dinner: 8:00 PM)</p>
-              <p class="event-custom-location">Sri Markandeya Padmashali Hall, Mangalagiri</p>
+              <p class="event-custom-date date-reception">13-12-2026 • 8:00 PM</p>
+              <p class="event-custom-location">Sri Markandeya Hall, Mangalagiri</p>
             </div>
           </div>
         </div>
@@ -650,26 +642,36 @@
 
           <!-- Attendance Details Section (Hidden automatically when 'Regretfully Decline' is clicked) -->
           <div id="rsvp-attendance-details">
-            <div class="form-row-dual">
-              <div class="form-field">
-                <label for="rsvp-guests">Number of Guests</label>
-                <select id="rsvp-guests">
-                  <option value="1">1 Person</option>
-                  <option value="2" selected>2 Persons</option>
-                  <option value="3">3 Persons</option>
-                  <option value="4">4 Persons</option>
-                  <option value="5+">5+ Family</option>
-                </select>
-              </div>
+            <div class="form-field">
+              <label for="rsvp-guests">Number of Guests</label>
+              <select id="rsvp-guests">
+                <option value="1">1 Person</option>
+                <option value="2" selected>2 Persons</option>
+                <option value="3">3 Persons</option>
+                <option value="4">4 Persons</option>
+                <option value="5+">5+ Family</option>
+              </select>
+            </div>
 
-              <div class="form-field">
-                <label>Events Attending</label>
-                <div class="event-checkboxes">
-                  <label><input type="checkbox" name="events" value="Pellikodukuni (10 Dec)" /> Pellikodukuni (10 Dec)</label>
-                  <label><input type="checkbox" name="events" value="Haldi (11 Dec)" /> Haldi (11 Dec)</label>
-                  <label><input type="checkbox" name="events" value="Wedding (12 Dec · Mangalagiri)" checked /> Wedding (12 Dec)</label>
-                  <label><input type="checkbox" name="events" value="Reception (13 Dec · Mangalagiri)" checked /> Reception (13 Dec)</label>
-                </div>
+            <div class="form-field">
+              <label>Events Attending</label>
+              <div class="event-checkboxes-grid">
+                <label class="event-check-pill">
+                  <input type="checkbox" name="events" value="Pellikodukuni (10 Dec)" />
+                  <span>Pellikodukuni (10 Dec)</span>
+                </label>
+                <label class="event-check-pill">
+                  <input type="checkbox" name="events" value="Haldi (11 Dec)" />
+                  <span>Haldi (11 Dec)</span>
+                </label>
+                <label class="event-check-pill">
+                  <input type="checkbox" name="events" value="Wedding (12 Dec)" checked />
+                  <span>Wedding (12 Dec)</span>
+                </label>
+                <label class="event-check-pill">
+                  <input type="checkbox" name="events" value="Reception (13 Dec)" checked />
+                  <span>Reception (13 Dec)</span>
+                </label>
               </div>
             </div>
           </div>

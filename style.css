@@ -173,7 +173,7 @@ button {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 76px 16px 0;
+  padding: 42px 16px 0;
   margin-bottom: 20px;
   width: 100%;
   background: #F3F5FA url('assets/hero-bg-blue.webp') no-repeat center top;
@@ -1186,7 +1186,6 @@ button {
 
 .date-haldi {
   color: #92400e !important;
-}
 }
 
 .title-reception-anantapur {
@@ -2727,25 +2726,26 @@ body.intro-active {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background: rgba(212, 175, 55, 0.12);
-  border: 1px solid rgba(212, 175, 55, 0.35);
-  padding: 6px 18px;
-  border-radius: 20px;
-  margin-top: 10px;
+  background: #fdfbf7;
+  border: 1.5px solid #d4af37;
+  padding: 8px 22px;
+  border-radius: 24px;
+  margin-top: 12px;
+  box-shadow: 0 2px 8px rgba(12, 28, 64, 0.08);
 }
 
 .contact-phone-pill a {
-  color: #f5f0e1;
+  color: #0c1c40 !important;
   text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 1.05rem;
+  font-weight: 700;
   letter-spacing: 0.5px;
 }
 
 .contact-phone-pill svg {
-  width: 16px;
-  height: 16px;
-  color: #d4af37;
+  width: 18px;
+  height: 18px;
+  color: #b45309 !important;
 }
 
 /* Hero Date Bottom - Positioned cleanly below divine figures */
@@ -2855,4 +2855,156 @@ body.intro-active {
   font-weight: 600;
   padding: 4px 10px;
   border-radius: 12px;
+}
+
+
+/* Hero Date Inline Badge - Sits cleanly in open sky without overlapping figures */
+.hero-date-badge-inline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(212, 175, 55, 0.6);
+  box-shadow: 0 4px 14px rgba(19, 57, 121, 0.1);
+  padding: 6px 18px;
+  border-radius: 999px;
+  margin-top: 2px;
+  margin-bottom: 12px;
+}
+
+.hero-date-badge-inline .hero-date-line {
+  font-family: var(--font-serif);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--color-royal-blue);
+  line-height: 1;
+}
+
+.hero-date-badge-inline .hero-date-sep {
+  color: var(--color-gold);
+  font-size: 0.95rem;
+}
+
+.hero-date-badge-inline .hero-place-line {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: var(--color-gold-dark);
+  line-height: 1;
+}
+
+/* Event Checkboxes 2x2 Full-Width Grid */
+.event-checkboxes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.event-check-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1.5px solid rgba(19, 57, 121, 0.18);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #1e293b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.event-check-pill:hover {
+  border-color: #d4af37;
+  background: #fdfbf7;
+}
+
+.event-check-pill input[type="checkbox"] {
+  accent-color: #133979;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .event-checkboxes-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .event-check-pill {
+    padding: 8px 8px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Natural Card Overlay Positioning */
+.event-card-inner-overlay {
+  position: absolute;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.overlay-right {
+  right: 5% !important;
+  width: 48% !important;
+  padding: 0 4px !important;
+}
+
+.overlay-left {
+  left: 5% !important;
+  width: 48% !important;
+  padding: 0 4px !important;
+}
+
+.event-custom-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(0.92rem, 2.7vw, 1.16rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.15 !important;
+  margin: 0 0 1px !important;
+  letter-spacing: 0.3px !important;
+}
+
+.title-pellikoduku {
+  color: #0c1c40 !important;
+}
+
+.event-custom-telugu {
+  font-size: clamp(0.66rem, 1.8vw, 0.78rem) !important;
+  color: #555 !important;
+  margin: 0 0 1px !important;
+  line-height: 1.1 !important;
+}
+
+.event-custom-date {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(0.7rem, 2vw, 0.84rem) !important;
+  font-weight: 700 !important;
+  margin: 1px 0 !important;
+  letter-spacing: 0.4px !important;
+  line-height: 1.15 !important;
+}
+
+.event-custom-location {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(0.66rem, 1.8vw, 0.76rem) !important;
+  font-weight: 600 !important;
+  color: #1e3a8a !important;
+  margin: 1px 0 0 !important;
+  letter-spacing: 0.3px !important;
+  line-height: 1.15 !important;
 }
