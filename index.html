@@ -49,11 +49,13 @@
   <!-- Canvas Confetti -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
-  <!-- Preload Fresh Bride & Groom Portraits & First Gallery Couple Photo & Hanging Swing -->
+  <!-- Preload Fresh Bride & Groom Portraits & First Gallery Couple Photo & Hanging Swing & Family Photos -->
   <link rel="preload" as="image" href="assets/venkatesh-groom-portrait.webp?v=20261210">
   <link rel="preload" as="image" href="assets/priyanka-bride-portrait.webp?v=20261210">
   <link rel="preload" as="image" href="assets/venkatesh-priyanka-couple-1.webp?v=20261210">
   <link rel="preload" as="image" href="assets/radha-krishna-swing.webp?v=20261210">
+  <link rel="preload" as="image" href="assets/family-panidapu.webp?v=20261126">
+  <link rel="preload" as="image" href="assets/family-kodali.webp?v=20261126">
 
   <link rel="stylesheet" href="style.css?v=20261210">
 </head>
@@ -139,8 +141,8 @@
 
   <!-- Floating Wedding Background Music Controller -->
   <audio id="weddingBgm" loop preload="auto">
-    <source src="assets/wedding-music.mp3?v=20261125c" type="audio/mpeg">
-    <source src="assets/wedding-music.mpeg?v=20261125c" type="audio/mpeg">
+    <source src="assets/wedding-music.mp3?v=20261126" type="audio/mpeg">
+    <source src="assets/wedding-music.mpeg?v=20261126" type="audio/mpeg">
   </audio>
   <button id="musicToggleBtn" class="floating-music-btn" aria-label="Toggle Wedding Music">
     <div class="music-disc-wrap">
@@ -628,6 +630,14 @@
           </div>
           <span class="family-role-badge">GROOM'S FAMILY</span>
           <h3 class="family-surname">Panidapu Family</h3>
+          <div class="family-card-photo-wrap">
+            <img 
+              src="assets/family-panidapu.webp?v=20261126" 
+              alt="Panidapu Family - Groom's Family" 
+              class="family-photo-img" 
+              loading="lazy"
+            />
+          </div>
           <div class="family-details-box">
             <p class="family-member-row"><strong>Father:</strong> Sri Panidapu Ramesh</p>
             <p class="family-member-row"><strong>Mother:</strong> Smt. Panidapu Madhavi</p>
@@ -645,6 +655,14 @@
           </div>
           <span class="family-role-badge">BRIDE'S FAMILY</span>
           <h3 class="family-surname">Kodali Family</h3>
+          <div class="family-card-photo-wrap">
+            <img 
+              src="assets/family-kodali.webp?v=20261126" 
+              alt="Kodali Family - Bride's Family" 
+              class="family-photo-img" 
+              loading="lazy"
+            />
+          </div>
           <div class="family-details-box">
             <p class="family-member-row"><strong>Father:</strong> Sri Kodali Kameswara Rao</p>
             <p class="family-member-row"><strong>Mother:</strong> Smt. Kodali Parvathi</p>
